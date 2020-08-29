@@ -75,6 +75,7 @@ if result then
         assert(f, "failed opening file for writing: " .. tostring(reason))
       end
       f:write(chunk)
+      print("flush")
       f:flush()
     end
   end)
